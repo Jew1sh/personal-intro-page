@@ -1,0 +1,128 @@
+/* Temel Stil ve Arka Plan */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: url('https://phoneky.co.uk/thumbs/screensavers/down/new/places/lightning-_zPPeEuEt.gif') no-repeat center center fixed;
+    background-size: cover;
+    background-color: #0000009c;
+    background-blend-mode: darken;
+    color: white;
+    z-index: 0;
+    /* opacity: 0.8; Arka plan opaklığını kaldırdım */
+    overflow-x: hidden;
+    /* Sayfada yatay kaydırmayı engeller */
+    overflow-y: auto;
+    /* Yalnızca dikey kaydırma */
+}
+
+/* Logo ve Jew Yazısı */
+header {
+    text-align: center;
+    padding: 50px 0;
+}
+
+h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #fff;
+    transition: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+/* Parazit Efekti ve Toz Olup Kaybolma */
+@keyframes particleEffect {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+        filter: blur(0px) grayscale(0%);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: scale(1.2);
+        filter: blur(2px) grayscale(100%);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1.5);
+        filter: blur(5px) grayscale(100%);
+    }
+}
+
+h1:hover {
+    animation: particleEffect 2s forwards;
+}
+
+/* Kutu Stili */
+.box {
+    width: 300px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 20px;
+    color: #333;
+    transition: transform 0.3s ease;
+    /* Başlıklar üzerine gelindiğinde büyüme */
+}
+
+.box:hover {
+    transform: scale(1.1);
+    /* Kutu üzerine gelindiğinde büyüme */
+}
+
+/* My Projects Kısmı Ortalanması */
+#projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.box h3 {
+    color: black;
+    /* Başlık rengini siyah yapıyoruz */
+}
+
+/* Başlık ve İçerik Alanı */
+#about,
+#projects,
+#contact {
+    text-align: center;
+    padding: 55px;
+}
+
+#about p,
+#projects p {
+    font-size: 16px;
+}
+
+/* Instagram Linki ve Logo */
+a {
+    text-decoration: none;
+    /* Alt çizgiyi kaldırır */
+}
+
+a box-icon {
+    margin-right: 04px;
+    /* Araya biraz boşluk ekler */
+    vertical-align: middle;
+    /* Yükseklik hizalama */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #33333300;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+}
