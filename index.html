@@ -3,78 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jew - Personal introduction page</title>
+    <title>Login</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-  <head>
-    <title>Jew - Web Developer & Designer</title>
-    <meta name="description" content="I am a web developer and designer. Check out my projects and let's work together!">
-    <meta name="keywords" content="web developer, designer, freelancer, projects, portfolio">
-    <meta name="author" content="Jew">
-    <meta name="robots" content="index, follow">
-
-    <!-- Sosyal Medya İçin -->
-    <meta property="og:title" content="Jew - Web Developer & Designer">
-    <meta property="og:description" content="I am a web developer and designer. Check out my projects and let's work together!">
-    <meta property="og:image" content="https://yourwebsite.com/preview-image.jpg">
-    <meta property="og:url" content="https://yourwebsite.com">
-    <meta name="twitter:card" content="summary_large_image">
-</head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   </head>
   <body>
-    <header>
-      <h1>Jew</h1>
-      <p>
-        I am a web developer and designer and I love producing creative
-        projects.
-      </p>
-    </header>
+    <!-- Fluid Background Section -->
+    <div id="background-container"></div>
 
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        Hello, I am Jew! I'm still a student and decided to earn money by using
-        the languages I know. I'm at full service for whatever you want. Best
-        regards!
-      </p>
-    </section>
-
-    <section id="projects">
-      <h2>My Projects</h2>
-      <div class="box">
-        <h3>Project 1</h3>
-        <p>Website Development</p>
+    <!-- Login Box -->
+    <div class="login-container">
+      <div class="login-box">
+        <h2>Login</h2>
+        <form action="#" method="POST" id="loginForm">
+          <div class="textbox">
+            <input
+              type="text"
+              placeholder="Username"
+              name="username"
+              required
+            />
+          </div>
+          <div class="textbox">
+            <input
+              type="password"
+              placeholder="Password"
+              name="password"
+              id="password"
+              required
+            />
+            <button type="button" id="togglePassword" class="toggle-btn">
+              👁️
+            </button>
+          </div>
+          <input type="submit" value="Login" />
+        </form>
       </div>
-      <div class="box">
-        <h3>Project 2</h3>
-        <p>E-commerce Platform</p>
-      </div>
-      <div class="box">
-        <h3>Project 3</h3>
-        <p>Blog Page</p>
-      </div>
-    </section>
+    </div>
 
-    <section id="contact">
-      <h2>Communication</h2>
-      <p>
-        Instagram:
-        <a href="https://www.instagram.com/real.jewish/" target="_blank"
-          ><box-icon name="instagram" type="logo"></box-icon>real.jewish</a
-        >
-      </p>
-      <p>Email: jewshott@hotmail.com</p>
-    </section>
-
-    <footer>
-      <p>&copy; 2025 Jew. All rights reserved.</p>
-    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
